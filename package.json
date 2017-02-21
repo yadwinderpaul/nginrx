@@ -1,10 +1,14 @@
 {
   "name": "nginrx",
   "version": "0.0.1",
-  "description": "Easy nginx server config management with cli and api",
+  "description": "EngineerX: Easy nginx server config management with cli and api",
   "main": "../lib/index.js",
+  "bin": {
+    "nginrx": "./bin/index.js"
+  },
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "postinstall": "node -e \"fs = require('fs'),fs.exists('./node_modules/app', (err) => { err||fs.symlinkSync('../lib', './node_modules/app', 'dir') })\""
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/yadwinderpaul/nginrx/issues"
   },
-  "homepage": "https://github.com/yadwinderpaul/nginrx#readme"
+  "homepage": "https://github.com/yadwinderpaul/nginrx#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "eslint": "^3.16.0",
+    "lodash": "^4.17.4",
+    "require-dir": "^0.3.1",
+    "yargs": "^6.6.0"
+  }
 }
