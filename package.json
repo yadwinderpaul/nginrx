@@ -1,6 +1,6 @@
 {
   "name": "nginrx",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "EngineerX: Easy nginx server config management with cli and api",
   "main": "../lib/index.js",
   "bin": {
@@ -15,9 +15,14 @@
     "url": "git+ssh://git@github.com/yadwinderpaul/nginrx.git"
   },
   "keywords": [
-    "nginx"
+    "nginx",
+    "nginx-configuration",
+    "cli",
+    "nodejs"
   ],
-  "author": "Yadwinder Paul Singh",
+  "author": {
+    "name": "Yadwinder Paul"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yadwinderpaul/nginrx/issues"
